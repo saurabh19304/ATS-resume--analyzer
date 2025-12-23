@@ -20,7 +20,7 @@ const navigate = useNavigate();
 
   useEffect( () => {
       if(!auth.isAuthenticated) navigate('/auth?next=/');
-  },[auth.isAuthenticated, next])
+  },[auth.isAuthenticated])
   return <main className="bg-[url('./images/bg-main.svg')] bg-cover">
 
        <Navbar />
